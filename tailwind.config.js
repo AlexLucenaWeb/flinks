@@ -1,3 +1,9 @@
+const colors = require('tailwindcss/colors');
+
+const flinks_colors = {
+       
+}
+
 module.exports = {  
     content: [   
           "./pages/**/*.{js,ts,jsx,tsx}",   

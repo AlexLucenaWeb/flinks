@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Header from '../components/header'
+import Intro from '../components/Intro'
 
 export default function Home() {
   return (
@@ -11,14 +13,7 @@ export default function Home() {
       </Head>
 
       <main className="">
-        <h1 className="font-semibold text-5xl mb-10 lowercase">
-         FLIKS
-        </h1>
-
-        <p className="">
-          Get started by editing{' '}
-          <code className="">pages/index.js</code>
-        </p>
+        <Intro/>
 
       
       </main>
