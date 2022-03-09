@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className="">
         <Intro/>
-
+        <h1 className='text-yellow'>Flinks</h1>
       
       </main>
 
