@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../components/header'
 import Intro from '../components/Intro'
+import Conciertos from '../components/Conciertos';
 
 export default function Home() {
   return (
@@ -14,8 +15,7 @@ export default function Home() {
 
       <main className="">
         <Intro/>
-        <h1 className='text-yellow'>Flinks</h1>
-      
+        <Conciertos/>
       </main>
 
       <footer className="">
