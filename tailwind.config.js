@@ -4,6 +4,9 @@ const flinks_colors = {
        'yellow': {
               DEFAULT: '#F7CB22',
             },
+       'white': {
+              DEFAULT: '#FFFFFF',
+       }
 }
 
 module.exports = {  

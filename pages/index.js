@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Header from '../components/header'
+import HeaderNav from '../components/HeaderNav'
 import Intro from '../components/Intro'
 import Conciertos from '../components/Conciertos';
 
@@ -14,6 +14,7 @@ export default function Home() {
       </Head>
 
       <main className="">
+        <HeaderNav/>
         <Intro/>
         <Conciertos/>
       </main>
