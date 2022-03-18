@@ -2,10 +2,13 @@ const colors = require('tailwindcss/colors');
 
 const flinks_colors = {
        'yellow': {
-              DEFAULT: '#F7CB22',
+              DEFAULT: '#F6C020',
             },
        'white': {
               DEFAULT: '#FFFFFF',
+       },
+       'purple': {
+              DEFAULT: '000001',
        }
 }
 
@@ -19,6 +22,7 @@ module.exports = {
                      transparent: 'transparent',
                      current: 'currentColor',
                      yellow: flinks_colors.yellow,
+                     black: '#000000',
               },
               screens: {
                      xs: '475px',
@@ -30,7 +34,8 @@ module.exports = {
                      '2xl': '1536px',
                      '3xl': '1980px',
                  },
-           extend: {},
+           extend: {
+           },
            },  
     plugins: [],
 }
