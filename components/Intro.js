@@ -1,15 +1,13 @@
 import { useState, useEffect } from 'react'
-import bg from '../public/assets/images/capas_web_test.jpg'
 
+import FondoDinamico from './FondoDinamico'
+
+import logoAnimate from '../public/assets/images/flinks_logo_animate.gif'
 
 const Intro = ( props ) => {
 
     const [ logoOpacity, setLogoOpacity ] = useState('opacity-100')
     const [ bgOpacity, setBgOpacity ] = useState('0')
-
-    const style = {
-        backgroundImage : `url('${bg.src}')`
-    }
 
     const opacityStyle = {
         opacity : bgOpacity,
@@ -37,17 +35,15 @@ const Intro = ( props ) => {
     useEffect(() => {
         window.addEventListener('scroll', hideLogo),
         window.addEventListener('scroll', bgOpacityScroll)
-
     }, [])
     
     return (
         <div data-component="intro" className="w-screen h-screen relative">
-            <div className='fixed inset-0 h-screen w-screen bg-cover bg-no-repeat bg-center z-[-2]' style={style}>
-                <img src="/_next/static/media/logo_gif.68274365.gif" width="900" height="" alt="logo" className={`absolute top-1/2 left-1/2 -mt-[10%] -ml-28 transition-opacity duration-700 ${logoOpacity}`}/> 
+            <div className='fixed inset-0 h-screen w-screen z-[-2]'>
+                <FondoDinamico/>
             </div>
-            <div className={`fixed inset-0 h-screen w-screen bg-black z-[-1]`} style={opacityStyle}>
-
-            </div>
+            <img src={logoAnimate.src} width="900" height="" alt="logo" className={`absolute top-1/2 left-1/2 -mt-[10%] -ml-28 transition-opacity duration-700 ${logoOpacity}`}/> 
+            <div className={`fixed inset-0 h-screen w-screen bg-black z-[-1]`} style={opacityStyle}></div>
         </div>
     )
 }
