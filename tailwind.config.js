@@ -18,11 +18,16 @@ module.exports = {
           "./components/**/*.{js,ts,jsx,tsx}",  
            ],
     theme: {
+              fontFamily: {
+                     sans: ['', 'sans-serif'],
+                     'cheddar': ['CheddarGothicSansTwo', 'sans-serif'],
+              },
               colors: {
                      transparent: 'transparent',
                      current: 'currentColor',
                      yellow: flinks_colors.yellow,
                      black: '#000000',
+                     white: '#FFFFFF',
               },
               screens: {
                      xs: '475px',
@@ -34,8 +39,6 @@ module.exports = {
                      '2xl': '1536px',
                      '3xl': '1980px',
                  },
-           extend: {
-           },
            },  
-    plugins: [],
+           plugins: [],
 }
