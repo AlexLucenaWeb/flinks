@@ -39,10 +39,13 @@ const Intro = ( props ) => {
     
     return (
         <div data-component="intro" className="w-screen h-screen relative">
+            {/* Dynamic bg */}
             <div className='fixed inset-0 h-screen w-screen z-[-2]'>
                 <FondoDinamico/>
             </div>
+            {/* Flinks logo gif */}
             <img src={logoAnimate.src} width="900" height="" alt="logo" className={`absolute top-1/2 left-1/2 -mt-[10%] -ml-28 transition-opacity duration-700 ${logoOpacity}`}/> 
+            {/* Black opacity layer */}
             <div className={`fixed inset-0 h-screen w-screen bg-black z-[-1]`} style={opacityStyle}></div>
         </div>
     )

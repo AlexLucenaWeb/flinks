@@ -1,8 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import HeaderNav from '../components/HeaderNav'
 import Intro from '../components/Intro'
 import Conciertos from '../components/Conciertos';
+import Galeria from '../components/Galeria';
+import SobreNosotros from '../components/SobreNosotros';
+import Contacto from '../components/Contacto';
 
 export default function Home() {
   return (
@@ -17,6 +19,9 @@ export default function Home() {
         <HeaderNav/>
         <Intro/>
         <Conciertos/>
+        <Galeria/>
+        <SobreNosotros/>
+        <Contacto/>
       </main>
 
       <footer className="">
