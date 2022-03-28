@@ -34,8 +34,10 @@ const FondoDinamico = ( props ) => {
 
     const monkStyle = {
         backgroundImage: `url('${monje.src}')`,
-        bottom: monkPosition.bottom,
-        left: monkPosition.left
+        // bottom: monkPosition.bottom,
+        // left: monkPosition.left        
+        bottom: 0,
+        left: 0 
     }
 
     const lightStyle = {
@@ -66,7 +68,7 @@ const FondoDinamico = ( props ) => {
         <div data-component="FondoDinamico" className='h-screen w-screen relative' style={style}>
             <div className='absolute h-screen w-screen bg-cover bg-no-repeat' style={lightStyle}></div>
             <div className='absolute h-screen w-screen bg-cover bg-no-repeat' style={lighRaytStyle}></div>
-            <div className='absolute h-screen w-screen bg-cover bg-no-repeat' style={monkStyle}></div>
+            <div className='absolute h-screen w-screen bg-cover bg-no-repeat animate-levitar' style={monkStyle}></div>
             <div className='absolute h-screen w-screen bg-cover bg-no-repeat ' style={columnLeftStyle}></div>
             <div className='absolute h-screen w-screen bg-cover bg-no-repeat' style={columnRightStyle}></div>
         </div>
