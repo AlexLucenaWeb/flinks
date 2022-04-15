@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
-import fondo from '../public/assets/images/fondo.png'
 
-import columna_derecha from '../public/assets/images/columna_derecha.png'
-import columna_izquierda from '../public/assets/images/columna_izquierda.png'
-import monje from '../public/assets/images/monje.png'
-import luz from '../public/assets/images/luz.png'
-import luz_rayos from '../public/assets/images/luz_rayos.png'
+import fondo from '../public/assets/images/fondo_dinamico/fondo.png'
+import columna_derecha from '../public/assets/images/fondo_dinamico/columna_derecha.png'
+import columna_izquierda from '../public/assets/images/fondo_dinamico/columna_izquierda.png'
+import monje from '../public/assets/images/fondo_dinamico/monje.png'
+import luz from '../public/assets/images/fondo_dinamico/luz.png'
+import luz_rayos from '../public/assets/images/fondo_dinamico/luz_rayos.png'
 
 
 const FondoDinamico = ( props ) => {

@@ -12,7 +12,8 @@ const flinks_colors = {
        }
 }
 
-module.exports = {  
+module.exports = {
+       mode: 'jit',
     content: [   
           "./pages/**/*.{js,ts,jsx,tsx}",   
           "./components/**/*.{js,ts,jsx,tsx}",  
@@ -49,7 +50,11 @@ module.exports = {
                      },
                      animation: {
                             levitar: 'levitar 5s ease-in-out infinite',
-                          }
+                          },
+                     boxShadow: {
+                            'video': '0px 0px 50px 2px rgba(255,255,255, 0.2)',
+                            'video-hover': '0px 0px 60px 5px rgba(255,255,255, 0.3)',
+                     },
                    }
            },  
            plugins: [],

@@ -6,8 +6,8 @@ const HeaderNav = ( props ) => {
 
     const links = [
         {title: "Conciertos", link: "conciertos" },
-        {title: "Galeria", link: "galeria" },
         {title: "Sobre Flinks", link: "sobre_nosotros" },
+        {title: "Galeria", link: "galeria" },
         {title: "Contacto", link: "contacto" },
     ];
 
@@ -28,20 +28,22 @@ const HeaderNav = ( props ) => {
 
 
     return (
-        <div data-component="HeaderNav" className="fixed top-0 z-50 flex justify-between w-full py-5 px-20">
-            
-            {/* Links logo */}
-            <img src={logo.src} width="100" className={`transition-opacity duration-700 ${logoOpacity}`}/>
-            
-            {/* Menu */}
-            <ul className='flex gap-6 py-4 text-yellow text-2xl font-cheddar'>
-                {links.map((link, index) =>(
-                    <li key={index} onClick={() => useRefLinkHandler(link.link)} className="hover:cursor-pointer hover:text-white transition-colors duration-100">
-                        {link.title}
-                    </li>
-                ))}
-            </ul>
+        <div data-component="HeaderNav" className="fixed top-0 z-50 w-full">
+            <nav className='max-w-7xl mx-auto flex justify-between w-full py-2'>
 
+                {/* Links logo */}
+                <img src={logo.src} width="100" className={`transition-opacity duration-700 ${logoOpacity}`}/>
+                
+                {/* Menu */}
+                <ul className='flex gap-6 py-4 text-yellow text-2xl font-cheddar'>
+                    {links.map((link, index) =>(
+                        <li key={index} onClick={() => useRefLinkHandler(link.link)} className="hover:cursor-pointer hover:text-white transition-colors duration-100">
+                            {link.title}
+                        </li>
+                    ))}
+                </ul>
+
+            </nav>
         </div>
     )
 }

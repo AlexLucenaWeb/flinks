@@ -5,6 +5,7 @@ import Conciertos from '../components/Conciertos';
 import Galeria from '../components/Galeria';
 import SobreNosotros from '../components/SobreNosotros';
 import Contacto from '../components/Contacto';
+import FullVideo from '../components/FullVideo';
 
 export default function Home() {
   return (
@@ -19,8 +20,9 @@ export default function Home() {
         <HeaderNav/>
         <Intro/>
         <Conciertos/>
-        <Galeria/>
+        <FullVideo/>
         <SobreNosotros/>
+        <Galeria/>
         <Contacto/>
       </main>
 
