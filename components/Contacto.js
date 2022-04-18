@@ -9,7 +9,7 @@ const Contacto = ( props ) => {
         <div data-component='Contacto' id='contacto' className='w-full flex py-20 justify-center'>
             <div className='w-full lg:max-w-6xl px-5 xl:px-2 text-yellow'>
                 <h2 className='text-3xl sm:text-5xl lg:text-7xl mb-16 font-cheddar text-white uppercase'>
-                    Contact<span className="text-yellow">o</span>
+                    DI HOL<span className="text-yellow">A</span>
                 </h2>
                 <div className="text-[10rem] text-white font-cheddar">
                     <a href="mailto:hi@flinks.com" className="mx-auto cursor-pointer block" 
