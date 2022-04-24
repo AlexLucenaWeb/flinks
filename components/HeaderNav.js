@@ -11,14 +11,17 @@ const HeaderNav = ( props ) => {
         {title: "Contacto", link: "contacto" },
     ];
 
-    const [ logoOpacity, setLogoOpacity ] = useState('opacity-0') 
+    const [ logoOpacity, setLogoOpacity ] = useState('opacity-0')
+    const [ navBgColor, setNavBgColor ] = useState("")
 
     const showLogo = () => {
         if (window.scrollY >= 10 ){
             setLogoOpacity('opacity-100')
+            setNavBgColor("nav-bg")
 
         } else {
             setLogoOpacity('opacity-0')
+            setNavBgColor("")
         }
     }
 
@@ -28,7 +31,7 @@ const HeaderNav = ( props ) => {
 
 
     return (
-        <div data-component="HeaderNav" className="fixed top-0 z-50 w-full">
+        <div data-component="HeaderNav" className={`fixed top-0 z-50 w-full ${navBgColor}`}>
             <nav className='max-w-7xl mx-auto flex justify-between w-full py-2'>
 
                 {/* Links logo */}

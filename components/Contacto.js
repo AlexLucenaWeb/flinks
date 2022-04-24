@@ -1,4 +1,7 @@
 import { useState } from "react"
+import instagranLogo from "../public/assets/images/instaLogo.png"
+import youtubeLogo from "../public/assets/images/youtubeLogo.png"
+import spotifyLogo from "../public/assets/images/spotifyLogo.png"
 
 const Contacto = ( props ) => {
 
@@ -11,15 +14,28 @@ const Contacto = ( props ) => {
                 <h2 className='text-3xl sm:text-5xl lg:text-7xl mb-16 font-cheddar text-white uppercase'>
                     DI HOL<span className="text-yellow">A</span>
                 </h2>
-                <div className="text-[10rem] text-white font-cheddar">
-                    <a href="mailto:hi@flinks.com" className="mx-auto cursor-pointer block" 
-                        onMouseEnter={() => setEmail("hi@flinks.com")} onMouseLeave={() => setEmail("email")}>
-                        {email}
-                    </a>
-                    <a href="tel:123456789" className="mx-auto cursor-pointer block" 
+                <div className="text-[10rem] text-white font-cheddar text-center mb-10">
+                    <a href="tel:123456789" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100 inline-block" 
                         onMouseEnter={() => setTelefono("123456789")} onMouseLeave={() => setTelefono("telefono")}>
                         {telefono}
                     </a>
+                    <div>
+                        <a href="mailto:hi@flinks.com" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100 inline-block" 
+                            onMouseEnter={() => setEmail("hi@flinks.com")} onMouseLeave={() => setEmail("email")}>
+                            {email}
+                        </a>
+                    </div>
+                </div>
+                <div className="flex gap-4 justify-evenly">
+                        <a href="https://www.instagram.com/flinksofficial/" className="transition duration-200 transform hover:scale-110">
+                            <img src={instagranLogo.src} width="150" height="150"/>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCxbK88JmUvrDmGMzJ5yzRcQ" className="transition duration-200 transform hover:scale-110">
+                            <img src={spotifyLogo.src} width="150" height="150"/>
+                        </a>                        
+                        <a href="https://open.spotify.com/artist/4oFz4w82DzzoT19TsPvA48" className="transition duration-200 transform hover:scale-110">
+                            <img src={youtubeLogo.src} width="150" height="150"/>
+                        </a>
                 </div>
             </div>
         </div>

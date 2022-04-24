@@ -5,7 +5,7 @@ const Galeria = ( props ) => {
     const [showVideo, setShowVideo] = useState(false)
 
     return (
-        <div data-component='FullVideo' className='w-full flex py-20 justify-center'>
+        <div data-component='FullVideo' className='w-full flex pt-20 pb-28 justify-center'>
             <div className='w-full lg:max-w-6xl px-5 xl:px-2'>
 
                 <div className={`flex w-full justify-center cursor-pointer relative group rounded-lg hover:shadow-video-hover transition-all duration-300 bg-black bg-opacity-0 ${showVideo ? "shadow-video-hover" : " hover:bg-opacity-80 hover:shadow-video-hover"}`} onClick={()=>setShowVideo(true)}>

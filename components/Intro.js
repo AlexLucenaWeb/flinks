@@ -8,7 +8,7 @@ const Intro = ( props ) => {
 
     const [ logoOpacity, setLogoOpacity ] = useState('opacity-100')
     const [ bgOpacity, setBgOpacity ] = useState('0')
-    const [ showScrollDown, setShowScrollDown ] = useState(false)
+    const [ showScrollDown, setShowScrollDown ] = useState('opacity-0')
 
     const opacityStyle = {
         opacity : bgOpacity,
@@ -17,9 +17,11 @@ const Intro = ( props ) => {
     const hideLogo = () => {
         if (window.scrollY >= 10 ){
             setLogoOpacity('opacity-0')
+            setShowScrollDown('opacity-0')
 
         } else {
             setLogoOpacity('opacity-100')
+            setShowScrollDown('opacity-100')
         }
     }
 
@@ -37,13 +39,9 @@ const Intro = ( props ) => {
         window.addEventListener('scroll', hideLogo),
         window.addEventListener('scroll', bgOpacityScroll)
         setTimeout(() => {
-            if (window.pageYOffset < 10){
-                setShowScrollDown(true)
-            } else (
-                setShowScrollDown(false)
-            )
+            setShowScrollDown('opacity-100')
         }, 2000);
-    }, [window.pageYOffset])
+    }, [])
     
     return (
         <div data-component="intro" className="w-screen h-screen relative">
@@ -56,7 +54,7 @@ const Intro = ( props ) => {
             {/* Black opacity layer */}
             <div className={`fixed inset-0 h-screen w-screen bg-black z-[-1]`} style={opacityStyle}></div>
             {showScrollDown &&
-                <div className={`text-white absolute bottom-10 left-1/2 animate-pulse transition-all duration-300 ${showScrollDown ? "opacity-100" : "opacity-0"}`}>
+                <div className={`text-white absolute bottom-10 left-1/2 transition-all duration-300 ${showScrollDown}`}>
                     <p>Scroll Down </p>
                 </div>
             }
