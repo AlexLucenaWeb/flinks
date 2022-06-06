@@ -1,3 +1,5 @@
+import GallerySlider from './slider/slider'
+
 const Galeria = ( props ) => {
 
     return (
@@ -6,8 +8,8 @@ const Galeria = ( props ) => {
                 <h2 className='text-3xl sm:text-5xl lg:text-7xl mb-16 font-cheddar text-white uppercase'>
                     Galeri<span className="text-yellow">a</span>
                 </h2>
-                <div className="overflow">
-
+                <div className="">
+                    <GallerySlider/>
                     
                 </div>
                 
