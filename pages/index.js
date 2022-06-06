@@ -25,6 +25,7 @@ export default function Home() {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        <link rel="stylesheet" href='../../styles/slick.css'></link>
       </Head>
 
       <main className="">

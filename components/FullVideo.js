@@ -8,7 +8,7 @@ const Galeria = ( props ) => {
         <div data-component='FullVideo' className='w-full flex pt-20 pb-28 justify-center'>
             <div className='w-full lg:max-w-6xl px-5 xl:px-2'>
 
-                <div className={`flex w-full justify-center cursor-pointer relative group rounded-lg hover:shadow-video-hover transition-all duration-300 bg-black bg-opacity-0 ${showVideo ? "shadow-video-hover" : " hover:bg-opacity-80 hover:shadow-video-hover"}`} onClick={()=>setShowVideo(true)}>
+                <div className={`flex w-full justify-center cursor-pointer relative group rounded-lg transition-all duration-300 bg-black bg-opacity-0 ${showVideo ? "shadow-video-hover" : "hover:bg-opacity-80 hover:shadow-video-hover"}`} onClick={()=>setShowVideo(true)}>
                     {!showVideo &&
                         <div className="absolute inset-1/2 h-20 w-20 rounded-full bg-white bg-opacity-30 transform -translate-x-2/4 -translate-y-2/4 group-hover:bg-opacity-80 transition-all duration-300 z-10 flex items-center justify-center shadow-md">
                             <div className="text-yellow text-3xl transform translate-x-0.5 translate-y-0.5">▶</div>
