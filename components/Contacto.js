@@ -30,10 +30,10 @@ const Contacto = ( props ) => {
                         <a href="https://www.instagram.com/flinksofficial/" className="transition duration-200 transform hover:scale-105">
                             <img src={instagranLogo.src} width="150" height="150"/>
                         </a>
-                        <a href="https://www.youtube.com/channel/UCxbK88JmUvrDmGMzJ5yzRcQ" className="transition duration-200 transform hover:scale-105">
+                        <a href="https://open.spotify.com/artist/4oFz4w82DzzoT19TsPvA48" className="transition duration-200 transform hover:scale-105">
                             <img src={spotifyLogo.src} width="150" height="150"/>
                         </a>                        
-                        <a href="https://open.spotify.com/artist/4oFz4w82DzzoT19TsPvA48" className="transition duration-200 transform hover:scale-105">
+                        <a href="https://www.youtube.com/channel/UCxbK88JmUvrDmGMzJ5yzRcQ" className="transition duration-200 transform hover:scale-105">
                             <img src={youtubeLogo.src} width="150" height="150"/>
                         </a>
                 </div>

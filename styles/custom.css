@@ -13,3 +13,7 @@
 li .slick-active {
     color: white !important
 }
+
+.lock-position {
+    overflow: hidden;
+}
