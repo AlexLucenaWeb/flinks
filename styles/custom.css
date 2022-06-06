@@ -17,3 +17,11 @@ li .slick-active {
 .lock-position {
     overflow: hidden;
 }
+
+.slick-prev {
+    left: -40px
+}
+
+.slick-next {
+    right: -40px;
+}
