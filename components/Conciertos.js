@@ -28,7 +28,7 @@ const Conciertos = ( props ) => {
                                 </div>
                             </div>
 
-                            <a href={concierto.entradas_link} className="text-7xl">
+                            <a href={concierto.entradas_link} className="text-7xl hover:text-white transition-colors duration-300">
                                 Entradas
                             </a>
 

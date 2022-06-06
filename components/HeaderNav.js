@@ -35,7 +35,7 @@ const HeaderNav = ( props ) => {
             <nav className='max-w-7xl mx-auto flex justify-between w-full py-2'>
 
                 {/* Links logo */}
-                <img src={logo.src} width="100" className={`transition-opacity duration-700 ${logoOpacity}`}/>
+                <img src={logo.src} width="79,4" height="53,2" className={`transition-opacity duration-700 ${logoOpacity}`}/>
                 
                 {/* Menu */}
                 <ul className='flex gap-6 py-4 text-yellow text-2xl font-cheddar'>

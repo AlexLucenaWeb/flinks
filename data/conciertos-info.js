@@ -1,7 +1,7 @@
 const conciertos = [
     {
         dia: "21",
-        mes: "09",
+        mes: "FEB",
         ano: "2022",
         ciudad: "Madrid",
         sala: "Tu culo",
@@ -9,7 +9,7 @@ const conciertos = [
     },
     {
         dia: "21",
-        mes: "09",
+        mes: "MAY",
         ano: "2022",
         ciudad: "Madrid",
         sala: "Tu culo",
@@ -17,7 +17,7 @@ const conciertos = [
     },
     {
         dia: "21",
-        mes: "09",
+        mes: "AGO",
         ano: "2022",
         ciudad: "Madrid",
         sala: "Tu culo",
@@ -25,7 +25,7 @@ const conciertos = [
     },
     {
         dia: "21",
-        mes: "09",
+        mes: "DEC",
         ano: "2022",
         ciudad: "Madrid",
         sala: "Tu culo",
