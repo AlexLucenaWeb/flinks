@@ -50,7 +50,9 @@ const Intro = ( props ) => {
                 <FondoDinamico/>
             </div>
             {/* Flinks logo gif */}
-            <img src={logoAnimate.src} width="900" height="" alt="logo" className={`absolute top-1/2 left-1/2 -mt-[10%] -ml-28 transition-opacity duration-700 ${logoOpacity}`}/> 
+            <div className='w-full h-full flex items-center justify-end'>
+                <img src={logoAnimate.src} width="900" height="511" alt="logo" className={`transition-opacity duration-700 ${logoOpacity}`}/> 
+            </div>
             {/* Black opacity layer */}
             <div className={`fixed inset-0 h-screen w-screen bg-black z-[-1]`} style={opacityStyle}></div>
             {showScrollDown &&
