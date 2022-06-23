@@ -40,12 +40,21 @@ const GallerySlider = () => {
     infinite: true,
     speed: 500,
     centerMode: true,
-    centerPadding: '40px',
+    centerPadding: '0px',
     slidesToShow: 3,
     slidesToScroll: 1,
     nextArrow: <ReviewArrow direction="next"/>,
     prevArrow: <ReviewArrow direction="prev"/>,
     responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          adaptiveHeight: true,
+          centerMode: false,
+          slidesToShow: 1,
+          centerMode: false,
+        }
+      }, 
       {
         breakpoint: 640,
         settings: {
