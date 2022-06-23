@@ -1,4 +1,5 @@
 import conciertos from "../data/conciertos-info"
+import Tickets from "../components/icons/tickets"
 
 const Conciertos = ( props ) => {
 
@@ -11,11 +12,12 @@ const Conciertos = ( props ) => {
                 
                 <div className='w-full'>
                     {conciertos.map((concierto, index) => (
-                        <div key={index} className='flex justify-between mb-10 font-cheddar'>
+                        /*
+                        <div key={index} className='md:flex justify-between mb-10 font-cheddar'>
                             
                             <div className='flex items-center gap-4'>
-                                <p className="text-7xl font-semibold text-white">{concierto.dia}</p>
-                                <div className="text-3xl">
+                                <p className="text-3xl md:text-7xl font-semibold text-white">{concierto.dia}</p>
+                                <div className="text-3xl flex md:block gap-4">
                                     <p>{concierto.mes}</p>
                                     <p>{concierto.ano}</p>
                                 </div>
@@ -23,7 +25,7 @@ const Conciertos = ( props ) => {
                             <div className='flex items-center gap-4'>
                                 <p className="text-7xl font-semibold text-white">{concierto.ciudad}</p>
                                 <div className="text-3xl">
-                                    <p>SALA</p>
+                                    <p>{concierto.lugar}</p>
                                     <p>{concierto.sala}</p>
                                 </div>
                             </div>
@@ -33,6 +35,37 @@ const Conciertos = ( props ) => {
                             </a>
 
                         </div>
+                        */
+                       <div key={index} className="mb-14 sm:mb-6 font-cheddar flex justify-between transition-all duration-300 sm:hover:shadow-image-hover sm:p-4 rounded-md">
+                          
+                            <div className="flex gap-4 sm:gap-10 md:gap-20 lg:gap-32 xl:gap-48">
+                                <div className='flex items-end gap-4'>
+
+                                    <p className="text-5xl md:text-7xl font-semibold text-white">{concierto.dia}</p>
+                                    <div className="text-xl md:text-3xl">
+                                        <p>{concierto.mes}</p>
+                                        <p>{concierto.ano}</p>
+                                    </div>
+
+                                </div>
+                                <div className='flex items-end gap-4'>
+
+                                    <p className="text-5xl md:text-7xl font-semibold text-white">{concierto.ciudad}</p>
+                                    <div className="text-xl md:text-3xl text-yellow">
+                                        <p>{concierto.lugar}</p>
+                                        <p>{concierto.sala}</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div className="flex justify-end items-end md:items-center shrink pb-1 ">
+                                <a href={concierto.entradas_link} className="w-max">
+                                    <Tickets classes="w-10 md:w-16 h-10 md:h-16 fill-current text-yellow hover:text-white transition-colors duration-300"/>
+                                </a>
+                            </div>
+
+                       </div>
                     ))}
 
                 </div>

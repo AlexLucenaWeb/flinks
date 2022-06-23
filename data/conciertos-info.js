@@ -4,7 +4,8 @@ const conciertos = [
         mes: "FEB",
         ano: "2022",
         ciudad: "Madrid",
-        sala: "Tu culo",
+        lugar: "Sala",
+        sala: "Escena 17",
         entradas_link: "#"
     },
     {
@@ -12,21 +13,24 @@ const conciertos = [
         mes: "MAY",
         ano: "2022",
         ciudad: "Madrid",
-        sala: "Tu culo",
+        lugar: "Bar",
+        sala: "El Asesino",
         entradas_link: "#"
     },
     {
         dia: "21",
         mes: "AGO",
         ano: "2022",
-        ciudad: "Madrid",
-        sala: "Tu culo",
+        ciudad: "El Molar",
+        lugar:'polideportivo',
+        sala: "",
         entradas_link: "#"
     },
     {
         dia: "21",
         mes: "DEC",
         ano: "2022",
+        lugar: "Pabellon",
         ciudad: "Madrid",
         sala: "Tu culo",
         entradas_link: "#"

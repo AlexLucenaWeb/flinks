@@ -32,10 +32,10 @@ export default function Home() {
         <HeaderNav/>
         <Intro/>
         <Conciertos/>
-        <FullVideo/>
-        <SobreNosotros/>
-        <Galeria/>
-        <Contacto/>
+        {/* <FullVideo/> */}
+        {/* <SobreNosotros/> */}
+        {/* <Galeria/> */}
+        {/* <Contacto/> */}
       </main>
 
       <footer className="">

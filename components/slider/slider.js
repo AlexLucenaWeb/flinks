@@ -4,16 +4,16 @@ import SliderImage from './slider_image'
 import image1 from "../../public/assets/images/galeria/flinks1.jpg"
 import image2 from "../../public/assets/images/galeria/flinks2.jpg"
 import image3 from "../../public/assets/images/galeria/flinks3.jpg"
-import image4 from "../../public/assets/images/galeria/flinks4.jpg"
+import image4 from "../../public/assets/images/galeria/flinks4.png"
 import image5 from "../../public/assets/images/galeria/flinks5.jpg"
 import image6 from "../../public/assets/images/galeria/flinks6.jpg"
 import image7 from "../../public/assets/images/galeria/flinks7.jpg"
 import image8 from "../../public/assets/images/galeria/flinks8.jpg"
 import image9 from "../../public/assets/images/galeria/flinks9.jpg"
-import image10 from "../../public/assets/images/galeria/flinks10.jpg"
+import image10 from "../../public/assets/images/galeria/flinks10.png"
 import image11 from "../../public/assets/images/galeria/flinks11.jpg"
 import image12 from "../../public/assets/images/galeria/flinks12.jpg"
-import image13 from "../../public/assets/images/galeria/flinks13.jpg"
+import image13 from '../../public/assets/images/galeria/flinks13.jpg'
 import image14 from "../../public/assets/images/galeria/flinks14.jpg"
 import image15 from "../../public/assets/images/galeria/flinks15.jpg"
 import image16 from "../../public/assets/images/galeria/flinks16.jpg"
@@ -27,11 +27,10 @@ import image23 from "../../public/assets/images/galeria/flinks23.jpg"
 import image24 from "../../public/assets/images/galeria/flinks24.jpg"
 import image25 from "../../public/assets/images/galeria/flinks25.jpg"
 import image26 from "../../public/assets/images/galeria/flinks26.jpg"
-import image27 from "../../public/assets/images/galeria/flinks27.jpg"
 
 
 const images_data = [
-  image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26, image27,
+  image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15, image16, image17, image18, image19, image20, image21, image22, image23, image24, image25, image26,
 ]
 
 const GallerySlider = () => {

@@ -14,11 +14,9 @@ const GalleryImage = ( props ) => {
     }
 
     return (
-        <>
         <div className="p-6 flex items-center h-full">
             <img onClick={showImageHandler} src={props.image} width={props.width} height={props.height} loading="lazy" className='transition-all duration-300 hover:shadow-image-hover hover:cursor-pointer rounded'/>
         </div>
-        </>
     )
 }
 
