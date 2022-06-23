@@ -1,5 +1,6 @@
 import Slider from "react-slick";
 import SliderImage from './slider_image'
+import ReviewArrow from "./review_arrow";
 
 import image1 from "../../public/assets/images/galeria/flinks1.jpg"
 import image2 from "../../public/assets/images/galeria/flinks2.jpg"
@@ -35,13 +36,24 @@ const images_data = [
 
 const GallerySlider = () => {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '40px',
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    nextArrow: <ReviewArrow direction="next"/>,
+    prevArrow: <ReviewArrow direction="prev"/>,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        }
+      },      
+    ]
   };
 
   return (

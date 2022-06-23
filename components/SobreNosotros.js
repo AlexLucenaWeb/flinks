@@ -8,21 +8,24 @@ const SobreNosotros = ( props ) => {
     const class_grayscale = "grayscale hover:grayscale-0 transition-all duration-300"
 
     return (
-        <div data-component='SobreNosotros' id='sobre_nosotros' className='w-full flex py-20 justify-center'>
+        <div data-component='SobreNosotros' id='sobre_nosotros' className='w-full flex py-10 sm:py-20 justify-center'>
             <div className='w-full lg:max-w-6xl px-5 xl:px-2 text-white'>
                 
                 <h2 className='text-3xl sm:text-5xl lg:text-7xl mb-16 font-cheddar uppercase'>
                     Sobre Nosotro<span className="text-yellow">s</span>
                 </h2>
 
-                <div className="pb-10">
-                    <p className="font-mono text-xl pb-10 text-center">
+                <div className="pb-10 font-mono sm:text-xl pb-10 sm:text-center">
+                    <p>
                         Flink<span className="text-yellow">s</span>  nació en el año 2019 para intentar hacerse un hueco en la escena de rock alternativo en Madrid. 
                         <br/>
                         3 personas muy diferentes que hacen algo muy diferente. Desde el grunge más rancio has el pop más engendrico del rock. Formada por el cantante y guitarra argentino Julian vallmitjana. 
                         Influenciado por bandas como <span className="text-bold">Nirvana</span>, BUSH o el pop de los BEATLES Y el punk de RANCID hasta por géneros como el SKA y el Indi.
-                        <br/>
-                        <br/>
+                    </p>
+                    <div className="sm:hidden my-4">
+                        <img src={about_1.src} width="" height="" className={class_grayscale}/>
+                    </div>
+                    <p>
                         Presentan su primer disco a finales de 2021,”AFUERA” , por diferentes lugares   de ESPAÑA, especialmente en VALENCIA, BARCELONA Y MADRID.
                         En 2022 empiezan la grabación del que será su 2 álbum.
                         Lo diferente de Flinks, es que no se puede colocar en ningún género.
@@ -32,21 +35,22 @@ const SobreNosotros = ( props ) => {
                         <br/>
                         MUSICA DE LA CALLE PARA GENTE DE LA CALLE
                     </p>
-                    <div>
+                    <div className="hidden sm:block">
                         <img src={about_1.src} width="" height="" className={class_grayscale}/>
                     </div>
                 </div>
 
-                <div className="flex pb-16 items-center gap-10">
+                <div className="flex flex-col sm:flex-row pb-16 items-center gap-10">
                     <img src={bass_photo.src} width="250" height="250" className={`flex-none ${class_grayscale}`}/>
-                    <div>
+                    <div className="order-first sm:order-last">
                         <h3 className="text-4xl text-yellow font-cheddar mb-4">Axel</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur non sem ac tincidunt. Sed urna odio, hendrerit vitae placerat non, hendrerit semper mauris. Vivamus quis suscipit velit, id cursus est. Ut dignissim lacinia dolor at molestie. Praesent commodo diam a quam eleifend venenatis. Suspendisse lacinia sapien vitae justo elementum dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu molestie felis, non bibendum purus. Phasellus nec lorem augue. Ut auctor consequat venenatis. Nulla molestie.
                         </p>
                     </div>
                 </div>
-                <div className="flex pb-16 items-center gap-10">
+
+                <div className="flex flex-col sm:flex-row pb-16 items-center gap-10">
                     <div>
                         <h3 className="text-4xl text-yellow font-cheddar mb-4">Carlos Gonz'alez</h3>
                         <p>
@@ -66,9 +70,9 @@ const SobreNosotros = ( props ) => {
                     </div>
                     <img src={batera_photo.src} width="250" height="250" className={`justify-self-end flex-none ${class_grayscale}`}/>
                 </div>
-                <div className="flex pb-10 items-center gap-10">
+                <div className="flex flex-col sm:flex-row pb-10 items-center gap-10">
                     <img src={juli_photo.src} width="250" height="250" className={`flex-none ${class_grayscale}`}/>
-                    <div>
+                    <div className="order-first sm:order-last">
                         <h3 className="text-4xl text-yellow font-cheddar mb-4"> Juli'an Vallmitjana</h3>
                         <p>
                             Cantante, bajista, guitarrista y productos argentino.

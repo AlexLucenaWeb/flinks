@@ -33,9 +33,9 @@ export default function Home() {
         <Intro/>
         <Conciertos/>
         <FullVideo/>
-        {/* <SobreNosotros/> */}
-        {/* <Galeria/> */}
-        {/* <Contacto/> */}
+        <SobreNosotros/>
+        <Galeria/>
+        <Contacto/>
       </main>
 
       <footer className="">
