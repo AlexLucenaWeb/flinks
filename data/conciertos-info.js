@@ -22,8 +22,7 @@ const conciertos = [
         mes: "AGO",
         ano: "2022",
         ciudad: "El Molar",
-        lugar:'polideportivo',
-        sala: "",
+        sala: "polideportivo",
         entradas_link: "#"
     },
     {
