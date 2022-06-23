@@ -5,9 +5,11 @@ import BurgerIcon from './icons/burger'
 
 const HeaderNav = ( props ) => {
 
+    const [ showMenu, setShowMenu ] = useState(false)
+
     const links = [
         {title: "Conciertos", link: "conciertos" },
-        {title: "Sobre Flinks", link: "sobre_nosotros" },
+        {title: "Sobre Nosotros", link: "sobre_nosotros" },
         {title: "Galeria", link: "galeria" },
         {title: "Contacto", link: "contacto" },
     ];
@@ -32,7 +34,7 @@ const HeaderNav = ( props ) => {
 
 
     return (
-        <div data-component="HeaderNav" className={`fixed top-0 z-50 w-full pb-4 ${navBgColor}`}>
+        <div data-component="HeaderNav" className={`fixed top-0 z-40 w-full pb-4 ${navBgColor}`}>
             <nav className='max-w-7xl mx-auto flex justify-between w-full py-2 px-4'>
 
                 {/* Links logo */}
@@ -46,10 +48,30 @@ const HeaderNav = ( props ) => {
                         </li>
                     ))}
                 </ul>
-                <div className='sm:hidden mt-1'>
+                <div className='sm:hidden mt-1' onClick={()=>setShowMenu(true)}>
                     <BurgerIcon />
                 </div>
             </nav>
+
+            {/* phone menu */}
+            <div className={showMenu ? "visible" : "invisible"}>
+                <div className={`fixed inset-0`}>
+                    <div onClick={()=>setShowMenu(false)} className={`bg-black w-full h-full transition-all duration-300 ${showMenu ? "bg-opacity-75" : "bg-opacity-0"}`}>
+                    </div>
+                    <div className={`absolute top-0 inset-x-0 flex justify-between px-6 shadow-xl transition-all duration-300 pt-5 pb-10 ${navBgColor} ${showMenu ? "" : "-translate-y-full"}`}>
+                        <ul className='py-4 text-yellow text-2xl font-cheddar w-max' onClick={()=>setShowMenu(false)}>
+                            {links.map((link, index) =>(
+                                <li key={index} onClick={() => useRefLinkHandler(link.link)} className="mb-4">
+                                    {link.title}
+                                </li>
+                            ))}
+                        </ul>
+                        <div onClick={()=>setShowMenu(false)} className='rounded-full h-8 w-8 bg-white/30 text-black mt-4 flex items-center justify-center font-cheddar'>
+                            x
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
