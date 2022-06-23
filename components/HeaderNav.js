@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import useRefLinkHandler from '../lib/use-ref-handler'
 import logo from '../public/assets/images/logo_color.jpg'
 import BurgerIcon from './icons/burger'
+import CloseX from './icons/close_x'
 
 const HeaderNav = ( props ) => {
 
@@ -58,7 +59,7 @@ const HeaderNav = ( props ) => {
                 <div className={`fixed inset-0`}>
                     <div onClick={()=>setShowMenu(false)} className={`bg-black w-full h-full transition-all duration-300 ${showMenu ? "bg-opacity-75" : "bg-opacity-0"}`}>
                     </div>
-                    <div className={`absolute top-0 inset-x-0 flex justify-between px-6 shadow-xl transition-all duration-300 pt-5 pb-10 ${navBgColor} ${showMenu ? "" : "-translate-y-full"}`}>
+                    <div className={`absolute top-0 inset-x-0 flex justify-between px-6 shadow-xl transition-all duration-300 pt-5 pb-10 nav-bg ${showMenu ? "" : "-translate-y-full"}`}>
                         <ul className='py-4 text-yellow text-2xl font-cheddar w-max' onClick={()=>setShowMenu(false)}>
                             {links.map((link, index) =>(
                                 <li key={index} onClick={() => useRefLinkHandler(link.link)} className="mb-4">
@@ -67,7 +68,7 @@ const HeaderNav = ( props ) => {
                             ))}
                         </ul>
                         <div onClick={()=>setShowMenu(false)} className='rounded-full h-8 w-8 bg-white/30 text-black mt-4 flex items-center justify-center font-cheddar'>
-                            x
+                            <CloseX/>
                         </div>
                     </div>
                 </div>
