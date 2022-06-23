@@ -32,7 +32,7 @@ export default function Home() {
         <HeaderNav/>
         <Intro/>
         <Conciertos/>
-        {/* <FullVideo/> */}
+        <FullVideo/>
         {/* <SobreNosotros/> */}
         {/* <Galeria/> */}
         {/* <Contacto/> */}
