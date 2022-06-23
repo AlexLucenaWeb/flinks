@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 
 import FondoDinamico from './FondoDinamico'
+import FondoMovil from './FondoMovil'
 
 import logoAnimate from '../public/assets/images/flinks_logo_animate.gif'
 
@@ -46,8 +47,11 @@ const Intro = ( props ) => {
     return (
         <div data-component="intro" className="w-screen h-screen relative">
             {/* Dynamic bg */}
-            <div className='fixed inset-0 h-screen w-screen z-[-2]'>
+            <div className='hidden sm:block fixed inset-0 h-screen w-screen z-[-2]'>
                 <FondoDinamico/>
+            </div>
+            <div className='sm:hidden fixed inset-0 h-screen w-screen z-[-2]'>
+                <FondoMovil/>
             </div>
             {/* Flinks logo gif */}
             <div className='w-full h-full flex items-center justify-end'>
@@ -56,7 +60,7 @@ const Intro = ( props ) => {
             {/* Black opacity layer */}
             <div className={`fixed inset-0 h-screen w-screen bg-black z-[-1]`} style={opacityStyle}></div>
             {showScrollDown &&
-                <div className={`text-white text-xl absolute bottom-10 left-1/2 transition-all duration-300 font-cheddar ${showScrollDown}`}>
+                <div className={`w-full text-white text-xl absolute bottom-10 text-center transition-all duration-300 font-cheddar ${showScrollDown}`}>
                     <p>Scroll Down </p>
                 </div>
             }

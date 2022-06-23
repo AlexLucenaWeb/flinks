@@ -32,7 +32,7 @@ const HeaderNav = ( props ) => {
 
 
     return (
-        <div data-component="HeaderNav" className={`fixed top-0 z-50 w-full ${navBgColor}`}>
+        <div data-component="HeaderNav" className={`fixed top-0 z-50 w-full pb-4 ${navBgColor}`}>
             <nav className='max-w-7xl mx-auto flex justify-between w-full py-2 px-4'>
 
                 {/* Links logo */}

@@ -4,7 +4,7 @@ import Tickets from "../components/icons/tickets"
 const Conciertos = ( props ) => {
 
     return (
-        <div data-component='Cociertos' id='conciertos' className='w-full flex py-20 justify-center'>
+        <div data-component='Cociertos' id='conciertos' className='w-full flex pt-10 sm:pt-20 sm:pb-20 justify-center'>
             <div className='w-full lg:max-w-6xl px-5 xl:px-2 text-yellow'>
                 <h2 className='text-3xl sm:text-5xl lg:text-7xl mb-16 font-cheddar text-white uppercase'>
                     Concierto<span className="text-yellow">s</span>
@@ -12,30 +12,6 @@ const Conciertos = ( props ) => {
                 
                 <div className='w-full'>
                     {conciertos.map((concierto, index) => (
-                        /*
-                        <div key={index} className='md:flex justify-between mb-10 font-cheddar'>
-                            
-                            <div className='flex items-center gap-4'>
-                                <p className="text-3xl md:text-7xl font-semibold text-white">{concierto.dia}</p>
-                                <div className="text-3xl flex md:block gap-4">
-                                    <p>{concierto.mes}</p>
-                                    <p>{concierto.ano}</p>
-                                </div>
-                            </div>
-                            <div className='flex items-center gap-4'>
-                                <p className="text-7xl font-semibold text-white">{concierto.ciudad}</p>
-                                <div className="text-3xl">
-                                    <p>{concierto.lugar}</p>
-                                    <p>{concierto.sala}</p>
-                                </div>
-                            </div>
-
-                            <a href={concierto.entradas_link} className="text-7xl hover:text-white transition-colors duration-300">
-                                Entradas
-                            </a>
-
-                        </div>
-                        */
                        <div key={index} className="mb-14 sm:mb-6 font-cheddar flex justify-between transition-all duration-300 sm:hover:shadow-image-hover sm:p-4 rounded-md">
                           
                             <div className="flex gap-5 sm:gap-10 md:gap-20 lg:gap-32 xl:gap-48">
