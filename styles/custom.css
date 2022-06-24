@@ -2,6 +2,10 @@
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgba(9,9,121,0) 100%);
 }
 
+.footer-bg {
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 75%, rgba(9,9,121,0) 100%);
+}
+
 .slick-slide {
     height: 500px;
 }

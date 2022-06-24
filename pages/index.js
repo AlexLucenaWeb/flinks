@@ -38,8 +38,11 @@ export default function Home() {
         <Contacto/>
       </main>
 
-      <footer className="">
-
+      <footer className="pb-4 pt-6 footer-bg text-white font-cheddar">
+        <div className='max-w-7xl mx-auto px-4 flex justify-between'>
+          <p>© Flink<span className='text-yellow pr-1'>s</span> 2022</p>
+          <p>by <a href="https://www.alexlucena.com/" target="_blank" className='hover:text-yellow'>Alex Lucena</a></p>
+        </div>
       </footer>
     </div>
   )

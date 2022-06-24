@@ -8,7 +8,7 @@ const GalleryImage = ( props ) => {
 
         const image_div = document.getElementById('full_image')
 
-        image_div.innerHTML = `<div style="width:50%;max-height:80%"><img src=${props.image}/></div>`
+        image_div.innerHTML = `<div style="width:50%;max-height:80%"><img style="margin-right:auto; margin-left:auto" src=${props.image}/></div>`
         document.body.classList.add('lock-position')
         image_div.classList.remove("hidden")
     }
