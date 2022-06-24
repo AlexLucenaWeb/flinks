@@ -9,7 +9,7 @@ const Contacto = ( props ) => {
     const [ telefono, setTelefono ] = useState("telefono")
 
     return (
-        <div data-component='Contacto' id='contacto' className='w-full flex py-10 sm:py-20 justify-center'>
+        <div data-component='Contacto' id='contacto' className='w-full flex pt-10 sm:pt-20 pb-20 justify-center'>
             <div className='w-full lg:max-w-6xl px-5 xl:px-2 text-yellow'>
                 <h2 className='text-3xl sm:text-5xl lg:text-7xl mb-16 font-cheddar text-white uppercase'>
                     DI HOL<span className="text-yellow">A</span>

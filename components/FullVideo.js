@@ -23,7 +23,7 @@ const Galeria = ( props ) => {
                         :
                         <div className="hidden sm:flex justify-center items-center text-white group-hover:bg-black/10 w-[1020px] h-[630px] font-cheddar text-9xl sm:text-[16rem] lg:text-[20rem] leading-none text-center"> 
                             <div>
-                                <p className="text-yellow">AFUERA,</p>
+                                <p className="text-yellow pt-2">AFUERA,</p>
                                 <p>fLINK<span className="text-yellow">S</span></p>
                             </div>
                         </div>
