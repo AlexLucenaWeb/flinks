@@ -25,7 +25,7 @@ const SobreNosotros = ( props ) => {
                     <div className="sm:hidden my-4">
                         <img src={about_1.src} width="" height="" className={class_grayscale}/>
                     </div>
-                    <p>
+                    <p className="text-roboto">
                         Presentan su primer disco a finales de 2021,”AFUERA” , por diferentes lugares   de ESPAÑA, especialmente en VALENCIA, BARCELONA Y MADRID.
                         En 2022 empiezan la grabación del que será su 2 álbum.
                         Lo diferente de Flinks, es que no se puede colocar en ningún género.

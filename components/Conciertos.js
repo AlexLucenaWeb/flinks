@@ -12,7 +12,7 @@ const Conciertos = ( props ) => {
                 
                 <div className='w-full'>
                     {conciertos.map((concierto, index) => (
-                       <div key={index} className="mb-14 sm:mb-6 font-cheddar flex justify-between transition-all duration-300 sm:hover:shadow-image-hover sm:p-4 rounded-md">
+                       <div key={index} className="mb-14 sm:mb-6 font-cheddar flex justify-between transition-all duration-300 sm:hover:shadow-image-hover sm:p-4 rounded-md group overflow-hidden">
                           
                             <div className="flex gap-5 sm:gap-10 md:gap-20 lg:gap-32 xl:gap-48">
 
@@ -48,7 +48,10 @@ const Conciertos = ( props ) => {
 
 
 
-                            <div className="flex justify-end items-end md:items-center pb-1 justify-self-end">
+                            <div className="flex justify-end items-end md:items-center pb-1 justify-self-end ">
+                                <div className="h-full flex items-center">
+                                    <p className="hidden sm:block sm:group-hover:text-white text-transparent transition-all duration-300 pr-8 text-lg md:text-xl ">Entradas →</p>
+                                </div>
                                 <a href={concierto.entradas_link} className="w-max">
                                     <Tickets classes="w-10 md:w-16 h-10 md:h-16 fill-current text-yellow hover:text-white transition-colors duration-300"/>
                                 </a>

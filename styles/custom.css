@@ -29,3 +29,20 @@ li .slick-active {
 .slick-next {
     right: -40px;
 }
+
+.bounce-in-right {
+    animation: bounce-in-right 2s ease;
+  }
+  @keyframes bounce-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(2000px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-30px);
+    }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  

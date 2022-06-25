@@ -10,3 +10,10 @@
     font-weight: 300;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'RobotoMono';
+    src:    url('../public/assets/fonts/RobotoMono-Medium.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}

@@ -22,6 +22,7 @@ module.exports = {
               fontFamily: {
                      sans: ['', 'sans-serif'],
                      'cheddar': ['CheddarGothicSansTwo', 'sans-serif'],
+                     'roboto':['RobotoMno', 'roboto'],
               },
               colors: {
                      transparent: 'transparent',

@@ -8,6 +8,7 @@ import Contacto from '../components/Contacto';
 import FullVideo from '../components/FullVideo';
 
 export default function Home() {
+
   return (
     <div className="">
       <Head>
@@ -25,7 +26,7 @@ export default function Home() {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
-        <link rel="stylesheet" href='../../styles/slick.css'></link>
+        {/* <link rel="stylesheet" href='../../styles/slick.css'></link> */}
       </Head>
 
       <main className="">
