@@ -19,7 +19,7 @@ const Galeria = ( props ) => {
                     }
                     {showVideo 
                         ? 
-                        <iframe className="w-full" height="630" src="https://www.youtube.com/embed/pwEe5Z2MSB0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+                        <iframe className="w-full" height="630" src="https://www.youtube.com/embed/pwEe5Z2MSB0?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>   
                         :
                         <div className="hidden sm:flex justify-center items-center text-white group-hover:bg-black/10 w-[1020px] h-[630px] font-cheddar text-9xl sm:text-[16rem] lg:text-[20rem] leading-none text-center"> 
                             <div>
@@ -39,13 +39,13 @@ const Galeria = ( props ) => {
                     onClick={()=>setShowPhoneVideo(true)}
                 >
                     {!showPhoneVideo &&
-                        <div className="sm:hidden absolute inset-1/2 h-20 w-20 rounded-full shadow-image-hover transform -translate-x-2/4 -translate-y-2/4 bg-black transition-all duration-300 z-10 flex items-center justify-center shadow-md">
+                        <div className="sm:hidden absolute inset-1/2 h-20 w-20 rounded-full shadow-image-hover transform -translate-x-2/4 -translate-y-2/4 bg-black transition-all duration-300 z-10 flex items-center justify-center">
                             <div className="text-yellow text-3xl transform translate-x-0.5 translate-y-0.5">▶</div>
                         </div>
                     }
                     {showPhoneVideo
                         ? 
-                        <iframe className="w-full" height="280" src="https://www.youtube.com/embed/pwEe5Z2MSB0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+                        <iframe className="w-full" height="280" src="https://www.youtube.com/embed/pwEe5Z2MSB0?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>   
                         :
                         <div className="text-white group-hover:bg-black/10 w-full font-cheddar text-9xl leading-none text-center"> 
                             <p className="text-yellow">AFUERA,</p>
