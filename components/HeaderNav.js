@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import useRefLinkHandler from '../lib/use-ref-handler'
+import refLinkHandler from '../lib/use-ref-handler'
 import logo from '../public/assets/images/logo_color.jpg'
 import BurgerIcon from './icons/burger'
 import CloseX from './icons/close_x'
@@ -44,7 +44,7 @@ const HeaderNav = ( props ) => {
                 {/* Menu */}
                 <ul className='hidden sm:flex gap-6 py-4 text-yellow text-2xl font-cheddar'>
                     {links.map((link, index) =>(
-                        <li key={index} onClick={() => useRefLinkHandler(link.link)} className="hover:cursor-pointer hover:text-white transition-colors duration-100">
+                        <li key={index} onClick={() => refLinkHandler(link.link)} className="hover:cursor-pointer hover:text-white transition-colors duration-100">
                             {link.title}
                         </li>
                     ))}
@@ -62,7 +62,7 @@ const HeaderNav = ( props ) => {
                     <div className={`absolute top-0 inset-x-0 flex justify-between px-6 shadow-xl transition-all duration-300 pt-5 pb-10 nav-bg ${showMenu ? "" : "-translate-y-full"}`}>
                         <ul className='py-4 text-yellow text-2xl font-cheddar w-max' onClick={()=>setShowMenu(false)}>
                             {links.map((link, index) =>(
-                                <li key={index} onClick={() => useRefLinkHandler(link.link)} className="mb-4">
+                                <li key={index} onClick={() => refLinkHandlergit(link.link)} className="mb-4">
                                     {link.title}
                                 </li>
                             ))}
