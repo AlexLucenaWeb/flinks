@@ -54,7 +54,7 @@ const Intro = ( props ) => {
                 <FondoMovil/>
             </div>
             {/* Flinks logo gif */}
-            <div className='w-full h-full flex items-center justify-end'>
+            <div className='w-full h-full flex items-center justify-end  xl:pr-20 2xl:pr-60'>
                 <img src={logoAnimate.src} width="900" height="511" alt="logo" className={`hidden lg:blok transition-opacity duration-700 ${logoOpacity}`}/> 
                 <img src={logoAnimate.src} width="692" height="393" alt="logo" className={`lg:block transition-opacity duration-700 ${logoOpacity}`}/> 
             </div>

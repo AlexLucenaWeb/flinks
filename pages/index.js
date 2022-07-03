@@ -6,8 +6,14 @@ import Galeria from '../components/Galeria';
 import SobreNosotros from '../components/SobreNosotros';
 import Contacto from '../components/Contacto';
 import FullVideo from '../components/FullVideo';
+import { readCookie } from '../lib/utils';
+import { useEffect } from 'react';
 
 export default function Home() {
+
+  useEffect(()=>{
+    const cookie = readCookie('julilu')
+  },[])
 
   return (
     <div className="">
@@ -18,7 +24,7 @@ export default function Home() {
         <link
           rel="stylesheet"
           type="text/css"
-          charset="UTF-8"
+          charSet="UTF-8"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
         <link

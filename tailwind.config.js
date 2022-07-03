@@ -20,9 +20,8 @@ module.exports = {
            ],
     theme: {
               fontFamily: {
-                     sans: ['', 'sans-serif'],
-                     'cheddar': ['CheddarGothicSansTwo', 'sans-serif'],
-                     'roboto':['RobotoMno', 'roboto'],
+                     sans: ['RobotoMono', 'sans-serif'],
+                     cheddar: ['CheddarGothicSansTwo', 'sans-serif'],
               },
               colors: {
                      transparent: 'transparent',
