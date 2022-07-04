@@ -15,12 +15,12 @@ const Contacto = ( props ) => {
                     DI HOL<span className="text-yellow">A</span>
                 </h2>
                 <div className="hidden sm:block text-[10rem] text-white font-cheddar text-center mb-10">
-                    <a href="tel:123456789" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100 inline-block" 
+                    <a href="tel:123456789" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100" 
                         onMouseEnter={() => setTelefono("123456789")} onMouseLeave={() => setTelefono("telefono")}>
                         {telefono}
                     </a>
                     <div>
-                        <a href="mailto:hi@flinks.com" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100 inline-block" 
+                        <a href="mailto:hi@flinks.com" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100" 
                             onMouseEnter={() => setEmail("hi@flinks.com")} onMouseLeave={() => setEmail("email")}>
                             {email}
                         </a>
