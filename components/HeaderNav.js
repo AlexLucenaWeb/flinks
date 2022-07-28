@@ -7,6 +7,7 @@ import CloseX from './icons/close_x'
 const HeaderNav = ( props ) => {
 
     const [ showMenu, setShowMenu ] = useState(false)
+    const [opacity, setOpacity ] = useState('opacity-0')
 
     const links = [
         {title: "Conciertos", link: "conciertos" },
@@ -31,11 +32,14 @@ const HeaderNav = ( props ) => {
 
     useEffect(() => {
         window.addEventListener('scroll', showLogo)
+        setTimeout(() => {
+            setOpacity('opacity-100')
+        }, 2000);
     },[])
 
 
     return (
-        <div data-component="HeaderNav" className={`fixed top-0 z-40 w-full pb-4 ${navBgColor}`}>
+        <div data-component="HeaderNav" className={`fixed top-0 z-40 w-full pb-4 tarnsition-all duration-300 ${navBgColor} ${opacity}`}>
             <nav className='max-w-7xl mx-auto flex justify-between w-full py-2 px-4'>
 
                 {/* Links logo */}

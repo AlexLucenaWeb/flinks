@@ -14,7 +14,7 @@ const Galeria = ( props ) => {
                 >
                     {!showVideo &&
                         <div className="hidden sm:flex absolute inset-1/2 h-20 w-20 rounded-full bg-white bg-opacity-30 transform -translate-x-2/4 -translate-y-2/4 group-hover:bg-opacity-80 transition-all duration-300 z-10  items-center justify-center shadow-md">
-                            <div className="text-yellow text-3xl transform translate-x-0.5 translate-y-0.5">▶</div>
+                            <div className="text-yellow text-3xl transform translate-x-0.5 -translate-y-0.5">▶</div>
                         </div>
                     }
                     {showVideo 
@@ -40,7 +40,7 @@ const Galeria = ( props ) => {
                 >
                     {!showPhoneVideo &&
                         <div className="sm:hidden absolute inset-1/2 h-20 w-20 rounded-full shadow-image-hover transform -translate-x-2/4 -translate-y-2/4 bg-black transition-all duration-300 z-10 flex items-center justify-center">
-                            <div className="text-yellow text-3xl transform translate-x-0.5 translate-y-0.5">▶</div>
+                            <div className="text-yellow text-3xl transform translate-x-0.5 -translate-y-0.5">▶</div>
                         </div>
                     }
                     {showPhoneVideo

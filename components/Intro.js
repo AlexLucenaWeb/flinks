@@ -61,7 +61,7 @@ const Intro = ( props ) => {
             {/* Black opacity layer */}
             <div className={`fixed inset-0 h-screen w-screen bg-black z-[-1]`} style={opacityStyle}></div>
             {showScrollDown &&
-                <div className={`w-full text-white text-xl absolute bottom-10 text-center transition-all duration-300 font-cheddar ${showScrollDown}`}>
+                <div className={`w-full text-white text-xl absolute bottom-20 sm:bottom-10 text-center transition-all duration-300 font-cheddar ${showScrollDown}`}>
                     <p>Scroll Down </p>
                 </div>
             }
