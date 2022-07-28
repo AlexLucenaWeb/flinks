@@ -62,12 +62,12 @@ const FondoDinamico = ( props ) => {
         window.addEventListener('mousemove', mouseMoveHandler)
         setTimeout(() => {
             setOpacity('opacity-0')
-        }, 2000);
+        }, 1800);
     }, [])
     
     return (
         <div data-component="FondoDinamico" className='h-screen w-screen relative' style={style}>
-            <div className={`absolute h-screen w-screen bg-cover bg-no-repeat bg-black z-10 transition-all duration-300 ${opacity}`}></div>
+            <div className={`absolute h-screen w-screen bg-cover bg-no-repeat bg-black z-10 transition-all duration-500 ${opacity}`}></div>
             <div className='absolute h-screen w-screen bg-cover bg-no-repeat' style={lightStyle}></div>
             <div className='absolute h-screen w-screen bg-cover bg-no-repeat' style={lighRaytStyle}></div>
             <div className='absolute h-screen w-screen bg-cover bg-no-repeat animate-levitar' style={monkStyle}></div>

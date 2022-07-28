@@ -34,12 +34,12 @@ const HeaderNav = ( props ) => {
         window.addEventListener('scroll', showLogo)
         setTimeout(() => {
             setOpacity('opacity-100')
-        }, 2000);
+        }, 1800);
     },[])
 
 
     return (
-        <div data-component="HeaderNav" className={`fixed top-0 z-40 w-full pb-4 tarnsition-all duration-300 ${navBgColor} ${opacity}`}>
+        <div data-component="HeaderNav" className={`fixed top-0 z-40 w-full pb-4 tarnsition-all duration-500 ${navBgColor} ${opacity}`}>
             <nav className='max-w-7xl mx-auto flex justify-between w-full py-2 px-4'>
 
                 {/* Links logo */}
