@@ -12,7 +12,7 @@ const Conciertos = ( props ) => {
                 
                 <div className='w-full'>
                     {conciertos.map((concierto, index) => (
-                       <div key={index} className="mb-14 sm:mb-6 font-cheddar flex justify-between transition-all duration-300 sm:hover:shadow-image-hover sm:p-4 rounded-md group overflow-hidden">
+                       <div key={index} className="mb-14 sm:mb-6 font-cheddar flex justify-between transition-all duration-300 sm:hover:shadow-image-hover sm:p-4 rounded-md group overflow-hidden cursor-pointer">
                           
                             <div className="flex gap-5 sm:gap-10 md:gap-20 lg:gap-32 xl:gap-48">
 
