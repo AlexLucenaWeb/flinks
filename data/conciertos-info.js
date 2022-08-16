@@ -3,7 +3,7 @@ const conciertos = [
         dia: "21",
         mes: "FEB",
         ano: "2022",
-        ciudad: "Madrid",
+        ciudad: "Barcelona",
         lugar: "Sala",
         sala: "Escena 17",
         entradas_link: "#"
