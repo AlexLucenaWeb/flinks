@@ -9,17 +9,23 @@ import FullVideo from '../components/FullVideo';
 import { readCookie } from '../lib/utils';
 import { useEffect } from 'react';
 
+import favicon96 from '../public/assets/images/icons/favicon-96x96.png'
+import favicon32 from '../public/assets/images/icons/favicon-32x32.png'
+import favicon16 from '../public/assets/images/icons/favicon-16x16.png'
+
 export default function Home() {
 
   useEffect(()=>{
     const cookie = readCookie('julilu')
   },[])
 
+  console.log(favicon32.src)
+
   return (
     <div className="">
       <Head>
         <title>Flinks</title>
-        <meta name="description" content="Flinks" />
+        <meta name="Flinks music band" content="Flinks" />
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
@@ -33,9 +39,12 @@ export default function Home() {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
         {/* <link rel="stylesheet" href='../../styles/slick.css'></link> */}
+        <link rel="icon" type="image/png" sizes="32x32" href={favicon16.src}></link>
+        <link rel="icon" type="image/png" sizes="96x96" href={favicon32.src}></link>
+        <link rel="icon" type="image/png" sizes="16x16" href={favicon96.src}></link>
       </Head>
 
-      <main className="">
+      <main>
         <HeaderNav/>
         <Intro/>
         <Conciertos/>

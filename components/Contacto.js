@@ -15,8 +15,8 @@ const Contacto = ( props ) => {
                     DI HOL<span className="text-yellow">A</span>
                 </h2>
                 <div className="hidden sm:block text-[10rem] text-white font-cheddar text-center mb-10">
-                    <a href="tel:123456789" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100" 
-                        onMouseEnter={() => setTelefono("123456789")} onMouseLeave={() => setTelefono("telefono")}>
+                    <a href="tel:601006943" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100" 
+                        onMouseEnter={() => setTelefono("601006943")} onMouseLeave={() => setTelefono("telefono")}>
                         {telefono}
                     </a>
                     <div>
@@ -27,8 +27,8 @@ const Contacto = ( props ) => {
                     </div>
                 </div>
                 <div className="sm:hidden text-white font-cheddar text-center mb-10 text-6xl">
-                    <a href="tel:123456789" className="mx-auto">
-                        1234566789
+                    <a href="tel:601006943" className="mx-auto">
+                        601006943
                     </a>
                     <div className="mt-10">
                         <a href="mailto:hi@flinks.com" className="mx-auto">
