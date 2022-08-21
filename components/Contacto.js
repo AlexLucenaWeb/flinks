@@ -16,7 +16,7 @@ const Contacto = ( props ) => {
                 </h2>
                 <div className="hidden sm:block text-[10rem] text-white font-cheddar text-center mb-10">
                     <a href="tel:601006943" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100" 
-                        onMouseEnter={() => setTelefono("601006943")} onMouseLeave={() => setTelefono("telefono")}>
+                        onMouseEnter={() => setTelefono("601006943¸")} onMouseLeave={() => setTelefono("telefono")}>
                         {telefono}
                     </a>
                     <div>
