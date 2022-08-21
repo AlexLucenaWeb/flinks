@@ -19,8 +19,6 @@ export default function Home() {
     const cookie = readCookie('julilu')
   },[])
 
-  console.log(favicon32.src)
-
   return (
     <div className="">
       <Head>
