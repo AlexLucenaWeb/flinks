@@ -56,7 +56,7 @@ const SobreNosotros = ( props ) => {
 
                 <div className="flex flex-col sm:flex-row pb-16 items-center gap-10">
                     <div>
-                        <h3 className="text-4xl text-yellow font-cheddar mb-4">Carlos Gonz'alez</h3>
+                        <h3 className="text-4xl text-yellow font-cheddar mb-4">Carlos González</h3>
                         <p>
                             Batería desde los 17 años.
                             <br/>
@@ -78,11 +78,11 @@ const SobreNosotros = ( props ) => {
                 <div className="flex flex-col sm:flex-row pb-10 items-center gap-10">
                     <img src={juli_photo.src} width="250" height="250" className={`flex-none ${class_grayscale}`}/>
                     <div className="order-first sm:order-last">
-                        <h3 className="text-4xl text-yellow font-cheddar mb-4"> Juli'an Vallmitjana</h3>
+                        <h3 className="text-4xl text-yellow font-cheddar mb-4"> Julián Vallmitjana</h3>
                         <p>
                             Cantante, bajista, guitarrista y productos argentino.
                             Lleva la música desde pequeño en la sangre, su primer banda(Aneurisma) la formo con la edad
-                            de 13 años con el batería JUAN PABLO SOLIS Y el guitarra y cantante Javier Poleschi,
+                            de 13 años con el batería Juan Pablo Solis Y el guitarra y cantante Javier Poleschi,
                             haciendo covers de Nirvana.
                             Afincado en Madrid desde el año 2002, esta es su quinta banda. Comenzando por el genero punk en
                             bandas como Ultimo Recurso o en el genero alternativo como cantante de Cubo Y
@@ -91,8 +91,8 @@ const SobreNosotros = ( props ) => {
                             Después de pasearse por el teatro musical con la gran "Banda Mocosa", decide formar 
                             <span className="font-bold"> Flink<span className="text-yellow">s</span></span>, para dar forma a algunos temas compuestos.
                             n 2018 Se graban 2 temas en SAE Estudios, Madrid, allí conoce a Edu Moreno, productos
-                            de FIX estudios y le ayuda a dar forma al proyecto.
-                            EN 2019 JUNTO A AXEL BAJAÑA Y CARLOS GONZALES, forman FLINKS, intentado calar en la
+                            de Fix estudios y le ayuda a dar forma al proyecto.
+                            En 2019 Junto a Axel Bajaña y Carlos Gonzales, forman Flink<span className="text-yellow">s</span>, intentado calar en la
                             escena del rock español
                         </p>
                     </div>
