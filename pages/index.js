@@ -12,21 +12,14 @@ import { useEffect } from 'react';
 import favicon96 from '../public/assets/images/icons/favicon-96x96.png'
 import favicon32 from '../public/assets/images/icons/favicon-32x32.png'
 import favicon16 from '../public/assets/images/icons/favicon-16x16.png'
-import apleicon57 from '../public/assets/images/icons/apple-icon-57x57.png'
-import apleicon60 from '../public/assets/images/icons/apple-icon-60x60.png'
-import apleicon72 from '../public/assets/images/icons/apple-icon-72x72.png'
-import apleicon76 from '../public/assets/images/icons/apple-icon-76x76.png'
-import apleicon114 from '../public/assets/images/icons/apple-icon-114x114.png'
-import apleicon120 from '../public/assets/images/icons/apple-icon-120x120.png'
-import apleicon144 from '../public/assets/images/icons/apple-icon-144x144.png'
-import apleicon152 from '../public/assets/images/icons/apple-icon-152x152.png'
-import apleicon180 from '../public/assets/images/icons/apple-icon-180x180.png'
 
 export default function Home() {
 
   useEffect(()=>{
     const cookie = readCookie('julilu')
   },[])
+
+  console.log(favicon32.src)
 
   return (
     <div className="">
@@ -49,21 +42,12 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="32x32" href={favicon16.src}></link>
         <link rel="icon" type="image/png" sizes="96x96" href={favicon32.src}></link>
         <link rel="icon" type="image/png" sizes="16x16" href={favicon96.src}></link>
-        <link rel="apple-touch-icon" sizes="57x57" href={apleicon57}></link>
-        <link rel="apple-touch-icon" sizes="60x60" href={apleicon60}></link>
-        <link rel="apple-touch-icon" sizes="72x72" href={apleicon72}></link>
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"></link>
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"></link>
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"></link>
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"></link>
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"></link>
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"></link>
       </Head>
 
       <main>
         <HeaderNav/>
         <Intro/>
-        {/* <Conciertos/> */}
+        <Conciertos/>
         <FullVideo/>
         <SobreNosotros/>
         <Galeria/>
