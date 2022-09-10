@@ -20,8 +20,8 @@ const Contacto = ( props ) => {
                         {telefono}
                     </a>
                     <div>
-                        <a href="mailto:hi@flinks.com" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100" 
-                            onMouseEnter={() => setEmail("hi@flinks.com")} onMouseLeave={() => setEmail("email")}>
+                        <a href="mailto:info@flinks.es" className="mx-auto cursor-pointer block hover:text-yellow transition-colors duration-100" 
+                            onMouseEnter={() => setEmail("info@flinks.es")} onMouseLeave={() => setEmail("email")}>
                             {email}
                         </a>
                     </div>
@@ -31,8 +31,8 @@ const Contacto = ( props ) => {
                         601006943
                     </a>
                     <div className="mt-10">
-                        <a href="mailto:hi@flinks.com" className="mx-auto">
-                            hi<span className="text-yellow">@</span>flinks.com
+                        <a href="mailto:info@flinks.es" className="mx-auto">
+                            info<span className="text-yellow">@</span>flinks.es
                         </a>
                     </div>
                 </div>
