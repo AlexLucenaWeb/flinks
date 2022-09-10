@@ -10,7 +10,7 @@ const HeaderNav = ( props ) => {
     const [opacity, setOpacity ] = useState('opacity-0')
 
     const links = [
-        {title: "Conciertos", link: "conciertos" },
+        // {title: "Conciertos", link: "conciertos" },
         {title: "Sobre Nosotros", link: "sobre_nosotros" },
         {title: "Galeria", link: "galeria" },
         {title: "Contacto", link: "contacto" },
