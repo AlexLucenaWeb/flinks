@@ -45,7 +45,7 @@ export default function Home() {
       <main>
         <HeaderNav/>
         <Intro/>
-        {/* <Conciertos/> */}
+        <Conciertos/>
         <FullVideo/>
         <SobreNosotros/>
         <Galeria/>
