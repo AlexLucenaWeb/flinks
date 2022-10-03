@@ -45,7 +45,7 @@ const Intro = ( props ) => {
     }, [])
     
     return (
-        <div data-component="intro" className="w-screen h-screen relative">
+        <div data-component="intro" className="w-full h-screen relative">
             {/* Dynamic bg */}
             <div className='hidden sm:block fixed inset-0 h-screen w-screen z-[-2]'>
                 <FondoDinamico/>

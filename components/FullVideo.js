@@ -21,7 +21,7 @@ const Galeria = ( props ) => {
                         ? 
                         <iframe className="w-full" height="630" src="https://www.youtube.com/embed/pwEe5Z2MSB0?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>   
                         :
-                        <div className="hidden sm:flex justify-center items-center text-white group-hover:bg-black/10 w-[1020px] h-[630px] font-cheddar text-9xl sm:text-[16rem] lg:text-[20rem] leading-none text-center"> 
+                        <div className="hidden sm:flex justify-center items-center text-white group-hover:bg-black/10 w-[1020px] h-[630px] font-cheddar text-9xl sm:text-[16rem] lg:text-[18rem] leading-none text-center"> 
                             <div>
                                 <p className="text-yellow pt-2">AFUERA,</p>
                                 <p>fLINK<span className="text-yellow">S</span></p>

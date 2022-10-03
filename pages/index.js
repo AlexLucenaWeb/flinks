@@ -22,7 +22,7 @@ export default function Home() {
   console.log(favicon32.src)
 
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Flinks</title>
         <meta name="Flinks music band" content="Flinks" />

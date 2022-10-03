@@ -5,12 +5,12 @@ const Conciertos = ( props ) => {
 
     return (
         <div data-component='Cociertos' id='conciertos' className='w-full flex pt-10 sm:pt-20 sm:pb-20 justify-center'>
-            <div className='w-full lg:max-w-6xl px-5 xl:px-2 text-yellow'>
+            <div className='lg:max-w-6xl px-5 xl:px-2 text-yellow'>
                 <h2 className='text-3xl sm:text-5xl lg:text-7xl mb-16 font-cheddar text-white uppercase'>
                     Concierto<span className="text-yellow">s</span>
                 </h2>
                 
-                <div className='w-full'>
+                <div>
                     {conciertos.map((concierto, index) => (
                        <div key={index} className="mb-14 sm:mb-6 font-cheddar flex justify-between transition-all duration-300 sm:hover:shadow-image-hover sm:p-4 rounded-md group overflow-hidden cursor-pointer">
                           
