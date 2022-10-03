@@ -52,7 +52,7 @@ const Conciertos = ( props ) => {
                                 <div className="h-full flex items-center">
                                     <p className="hidden sm:block sm:group-hover:text-white text-transparent transition-all duration-300 pr-8 text-lg md:text-xl ">Entradas →</p>
                                 </div>
-                                <a href={concierto.entradas_link} className="w-max">
+                                <a href={concierto.entradas_link} className="w-max" target="_blank">
                                     <Tickets classes="w-10 md:w-16 h-10 md:h-16 fill-current text-yellow hover:text-white transition-colors duration-300"/>
                                 </a>
                             </div>

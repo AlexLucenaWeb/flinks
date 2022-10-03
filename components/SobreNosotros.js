@@ -3,7 +3,24 @@ import bass_photo from "../public/assets/images/bass-low.png"
 import batera_photo from "../public/assets/images/batera-low.png"
 import juli_photo from "../public/assets/images/juli-low.png"
 
+// import dosierFlinks from "../public/Dossier-flinks.pdf"
+
 const SobreNosotros = ( props ) => {
+
+    const downloadDosierHandler = () => {
+        // using Java Script method to get PDF file
+        fetch('Dossier-flinks.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'Dossier-flinks.pdf';
+                alink.click();
+            })
+        })
+    }
 
     const class_grayscale = "grayscale hover:grayscale-0 transition-all duration-300"
 
@@ -98,7 +115,14 @@ const SobreNosotros = ( props ) => {
                     </div>
 
                 </div>
-                
+
+
+                <div className="pt-5 flex justify-center">
+                    <button onClick={downloadDosierHandler} className="text-3xl sm:text-5xl text-white font-cheddar justify-between transition-all duration-300 shadow-video sm:hover:shadow-video-hover p-2 sm:p-4 rounded-md group overflow-hidden cursor-pointer">
+                        Descárgate Nuestro Dosie<span className="text-yellow">r</span>
+                    </button>
+                </div>
+                            
             </div>
         </div>
     )
