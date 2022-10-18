@@ -1,0 +1,7 @@
+comandos:
+
+git add .
+
+git commit -m"el mensaje que quieras"
+
+git push
