@@ -116,6 +116,27 @@ const SobreNosotros = ( props ) => {
 
                 </div>
 
+                <div className="flex flex-col sm:flex-row pb-10 items-center gap-10">
+                    {/* <img src={juli_photo.src} width="250" height="250" className={`flex-none ${class_grayscale}`}/> */}
+                    <div className="order-first sm:order-last">
+                        <h3 className="text-4xl text-yellow font-cheddar mb-4">Jesús López</h3>
+                        <p>
+                        Guitarrista, compositor y aprendiz de piano.  Hijo de los dueños de un local de jazz, a muy temprana edad descubre, 
+                        entre los LP´s de casa, la música de King Crimson, Osibisa y Miles Davis entre otros. Se empezó a formar como percusionista en el 
+                        conservatorio a los 9 años pero es a los 12 años, y al escuchar a la dulce Lucille, cuando decide aprender a tocar la guitarra.
+                        <br/>
+                        Forma parte de distintas bandas que nunca salen a la luz del escenario, pero continúa aprendiendo de la mano de 
+                        profesores como Francisco Fernández, integrante de bandas como the pleasure fuckers, con quien aprende improvisación, técnica y armonía aplicadas a la guitarra.
+                        <br/>
+                        A lo largo de su carrera, y debido a su formación audiovisual, compone varios temas dirigidos a publicidad online y cortometrajes.
+                        <br/>
+                        Tras años dedicados a la guitarra, entra a formar parte de <span className="font-bold"> Flink<span className="text-yellow">s</span></span> aportando nuevos colores a la música del grupo.
+
+                        </p>
+                    </div>
+
+                </div>
+
 
                 <div className="pt-5 flex justify-center">
                     <button onClick={downloadDosierHandler} className="text-3xl sm:text-5xl text-white font-cheddar justify-between transition-all duration-300 shadow-video sm:hover:shadow-video-hover p-2 sm:p-4 rounded-md group overflow-hidden cursor-pointer">
