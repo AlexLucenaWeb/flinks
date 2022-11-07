@@ -2,6 +2,7 @@ import about_1 from "../public/assets/images/flinks-about-1.jpg"
 import bass_photo from "../public/assets/images/bass-low.png"
 import batera_photo from "../public/assets/images/batera-low.png"
 import juli_photo from "../public/assets/images/juli-low.png"
+import jesus_photo from "../public/assets/images/jesus-low.png"
 
 // import dosierFlinks from "../public/Dossier-flinks.pdf"
 
@@ -92,6 +93,7 @@ const SobreNosotros = ( props ) => {
                     </div>
                     <img src={batera_photo.src} width="250" height="250" className={`justify-self-end flex-none ${class_grayscale}`}/>
                 </div>
+
                 <div className="flex flex-col sm:flex-row pb-10 items-center gap-10">
                     <img src={juli_photo.src} width="250" height="250" className={`flex-none ${class_grayscale}`}/>
                     <div className="order-first sm:order-last">
@@ -116,12 +118,11 @@ const SobreNosotros = ( props ) => {
 
                 </div>
 
-                <div className="flex flex-col sm:flex-row pb-10 items-center gap-10">
-                    {/* <img src={juli_photo.src} width="250" height="250" className={`flex-none ${class_grayscale}`}/> */}
-                    <div className="order-first sm:order-last">
+                <div className="flex flex-col sm:flex-row pb-16 items-center gap-10">
+                    <div>
                         <h3 className="text-4xl text-yellow font-cheddar mb-4">Jesús López</h3>
                         <p>
-                        Guitarrista, compositor y aprendiz de piano.  Hijo de los dueños de un local de jazz, a muy temprana edad descubre, 
+                          Guitarrista, compositor y aprendiz de piano.  Hijo de los dueños de un local de jazz, a muy temprana edad descubre, 
                         entre los LP´s de casa, la música de King Crimson, Osibisa y Miles Davis entre otros. Se empezó a formar como percusionista en el 
                         conservatorio a los 9 años pero es a los 12 años, y al escuchar a la dulce Lucille, cuando decide aprender a tocar la guitarra.
                         <br/>
@@ -134,9 +135,8 @@ const SobreNosotros = ( props ) => {
 
                         </p>
                     </div>
-
+                    <img src={jesus_photo.src} width="250" height="250" className={`justify-self-end flex-none ${class_grayscale}`}/>
                 </div>
-
 
                 <div className="pt-5 flex justify-center">
                     <button onClick={downloadDosierHandler} className="text-3xl sm:text-5xl text-white font-cheddar justify-between transition-all duration-300 shadow-video sm:hover:shadow-video-hover p-2 sm:p-4 rounded-md group overflow-hidden cursor-pointer">
